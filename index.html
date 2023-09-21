@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/myLogo.png">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+
+    </title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="comp">
+            <ul>
+                <li><a href="tel:+12672144444">+1 (267) 214-44-44</a></li>
+                <li><a href="https://instagram.com/bellagio_philadelphia?igshid=MWZjMTM2ODFkZg=="><img
+                            src='img/insta.svg' alt=""></a></li>
+                <li><a href="https://www.facebook.com/bellagiophiladelphia?mibextid=D4KYlr"><img src='img/fisbooc.svg'
+                            alt=""></a></li>
+            </ul>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li class="bl"></li>
+                <li><a href="#events">Events</a></li>
+                <li class="bl"></li>
+                <li><a href="#weddings">Weddings</a></li>
+                <li class="bl"></li>
+                <li><a href="#gallery">Galery</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="" id="btnForm">
+                        Enquire now
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobaile">
+            <ul>
+                <li><a href=""><img src='img/myLogo.png' alt=""></a></li>
+            </ul>
+            <ul>
+                <li id="myBurger"><a href="#"><img src="img/burger.svg" alt=""></a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class="modal">
+            <div class="box">
+                <div class="text">
+                    <h3>
+                        Start your journey
+                    </h3>
+                    <img src='img/close.svg'  id="close" alt="">
+                </div>
+                <form action="">
+                    <input type="text" id="name" name="" placeholder="Name" id="">
+                    <input type="number" id="phone" name="" placeholder="Phone" id="">
+                    <input type="text" id="eventType" name="" placeholder="Event type" id="">
+                    <input type="text" id="dateEvent" name="" placeholder="Date of the event" id="">
+                    <input type="text" id="numberGuests" name="" placeholder="Number of guests" id="">
+                    <textarea name="" id="comment" placeholder="Your suggestion (comment)" cols="30"
+                        rows="10"></textarea>
+                    <button id="btnSubmit">Enquire now</button>
+                </form>
+            </div>
+        </div>
+        <div class="burgerModal" id="burgerModal">
+            <div class="box">
+                <div class="block">
+                    <img src='img/myLogo.png'  alt="">
+                    <img src='img/closeBlac.svg'  id="burgerClose" alt="">
+                </div>
+                <div class="block">
+                    <div class="elem">
+                        <img src='img/burgerFon.png'  alt="">
+                    </div>
+                    <div class="elem">
+                        <a href="#about" id="urls">About</a>
+                        <a href="#events" id="urls">Events</a>
+                        <a href="#weddings" id="urls">Weddings</a>
+                        <a href="#gallery" id="urls">Gallery</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="block">
+                    <h3>Step in to the Art Of Elegance</h3>
+                    <a href="tel:+12672144444">+1 (267) 214-44-44</a>
+                    <button id="btnForms">Enquire now</button>
+                </div>
+            </div>
+        </div>
+        <section class="head">
+            <div class="vidio">
+                <video src='img/fonVidio.mp4'  autoplay muted loop></video>
+                <div></div>
+            </div>
+            <div class="cont">
+                <div class="box">
+
+                    <h1 class="obvodka" data-text="Step into the...">
+                        Step into the... <br><span class="obvodka" data-text="Art Of Elegance">Art Of Elegance</span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="cont">
+                <h2>About Us</h2>
+                <div class="box1">
+                    <div class="elem" data-aos="fade-right">
+
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/aboutFon1.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-left">
+
+                            <p>
+                                <b>Welcome to Bellagio Restaurant</b> - a luxurious venue in Philadelphia for weddings,
+                                parties,
+                                and
+                                special events. We create unforgettable experiences in a unique style. Accommodating
+                                from 100 to
+                                400 guests, we offer personalized consultations and host only one event at a time for an
+                                exclusive experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                </div>
+                <div class="box2">
+
+                    <div class="elem" data-aos="fade-right">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/aboutFon2.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-right">
+
+                            <p>
+                                <b>Elegant Space</b>: Our venue features Royal NeoClassical design with state of the art
+                                lighting
+                                system that can transform our venue to a venue of your dreams. Our venue features 16
+                                feet High
+                                Ceilings, 1260 sq feet reception hall, 6200 sq feet Grand Hall, 500 sq feet of bridal
+                                suite with
+                                powder room, custom cut 8 foot wide crystal chandeliers, custom cut beveled mirrors,
+                                Virtual
+                                Dome Ceiling and many other details that make Bellagio Restaurant the perfect venue for
+                                your
+                                event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="elem" data-aos="fade-right">
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/aboutFon3.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-left">
+
+                            <p>
+                                <b>Most Advanced Technology</b>: To make your event unforgettable our venue features
+                                Stage with
+                                Line
+                                Array RCF Sound System, 48 counts of the most advanced stage lighting system, 40 feet
+                                long 4K
+                                resolution Screen Behind our Stage, Two 10 feet long 4K resolution screens behind the
+                                Bride and
+                                Groom Throne.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                </div>
+                <div class="box2 stop">
+
+                    <div class="elem" data-aos="fade-right">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/aboutFon4.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-right">
+
+                            <p>
+                                <b>Tailored Menus</b>: We create a unique menu for your event that will exceed your
+                                expectations
+                                and
+                                leave you with unforgettable tastes.
+
+                                Live Chef Demos: Experience our chefs' expertise firsthand as they create culinary
+                                wonders right
+                                before your eyes.
+
+                                Professional Team: Our skilled organizers, waitstaff, and chefs ensure a seamless event.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="fon3d">
+            <div class="cont">
+                <h2>
+                    3D Tour
+                </h2>
+                <div class="box">
+                    <a href="https://www.asteroommls.com/pviewer?hideleadgen=1&token=kaXbCKvBbkGBjVxi4XfbPQ">
+
+                    </a>
+                    <iframe src="https://www.asteroommls.com/pviewer?hideleadgen=1&token=kaXbCKvBbkGBjVxi4XfbPQ"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="events" id="events">
+            <div class="cont">
+                <h2>
+                    Events
+                </h2>
+                <div class="box">
+                    <div class="block">
+                        <div class="elem">
+                            <div class="img">
+                                <img src='img/Weddings.png'  alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Weddings</h3>
+                                <p>
+                                    Committed to crafting your ideal day, our experts oversee every detail – from
+                                    lighting to
+                                    menus – ensuring a flawless, unforgettable celebration where your unique love story
+                                    shines
+                                    in every aspect.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="elem">
+                            <div class="img">
+                                <img src='img/Birthdays.png'  alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Birthdays</h3>
+                                <p>
+                                    Transform milestones into lasting memories within our captivating venue. Every
+                                    corner exudes
+                                    an air of festivity, elevating your birthday celebration into a cherished moment
+                                    shared with
+                                    your closest companions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="elem">
+                            <div class="img">
+                                <img src='img/Corporate parties.svg'  alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Corporate parties</h3>
+                                <p>
+                                    Nurturing professional connections is key to success. With refined settings,
+                                    engaging
+                                    cuisine, and ample mingling space, Bellagio excels in hosting corporate mixers,
+                                    career
+                                    fairs, trade expos, holiday gatherings, fundraisers, and networking events that
+                                    inspire
+                                    meaningful interactions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="elem">
+                            <div class="img">
+                                <img src='img/Business meetings.svg'  alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Business meetings</h3>
+                                <p>
+                                    From business meetings to team-building, Bellagio offers style and sophistication.
+                                    Let our
+                                    venue enhance strategy presentations, holiday parties, or business showcases. Our
+                                    planning
+                                    experts handle every detail, ensuring a stress-free experience. Focus on your group
+                                    while we
+                                    create unforgettable memories that spark business vitality.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="elem">
+                            <div class="img">
+                                <img src='img/Catering.svg'  alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Catering</h3>
+                                <p>
+                                    If you are planning an event at a different venue whether outdoor or indoor or even
+                                    at the
+                                    comfort of your own home, let our 35 years of experience catering thousands of
+                                    events take
+                                    care of everything for you from A-Z! Our team of experienced professionals will make
+                                    sure
+                                    your entire night will be something you and your guests never forget!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about control" id="weddings">
+            <div class="cont">
+                <h2>Weddings</h2>
+                <div class="box1">
+                    <div class="elem" data-aos="fade-right">
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/rest_img1.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-left">
+
+                            <h3>Family style</h3>
+
+                        </div>
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                </div>
+                <div class="box2">
+
+                    <div class="elem" data-aos="fade-right">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/rest_img2.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-right">
+
+                            <h3>Buffet</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1 stop">
+                    <div class="elem" data-aos="fade-right">
+                        <div class="myBlocks">
+                            <div class="imgBlocks">
+                                <img src='img/border.png'  alt="">
+                            </div>
+                            <img class="nnn" src='img/rest_img3.png'  alt="">
+                        </div>
+                        <div class="block" data-aos="fade-left">
+
+                            <h3>Catering</h3>
+
+                        </div>
+                    </div>
+                    <div class="elem" data-aos="fade-left">
+                        <img src='img/myLogo.png'  alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="cont">
+                <h2>Gallery</h2>
+                <div class="box">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon1.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon2.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon3.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon4.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon5.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon6.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon7.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon8.jpg'  alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block">
+                                    <img src='img/swiperFon9.jpg'  alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swipBox">
+                            <div class="custom">
+                                <div class="swiper-button-prev btns"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next btns"></div>
+                            </div>
+                        </div>
+                        <div class="myBlock">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+
+
+        <div class="cont myBlock">
+            <div class="footerCont">
+                <div class="map" id="map">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo1.png" alt="">
+                <a href=""><img src="img/icon.svg" alt=""> 9806 Bustleton, Philadelphia PA 19115</a>
+                <div class="contact">
+                    <a href="tel:">+1 (267) 214-44-44</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8vwy2tLXxwXz9HVOtVylxeJvw4YWHBbs&callback=initMap">
+        </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+
+        function initMap() {
+
+            const uluru = { lat: 55.8200691, lng: 49.1422454 };
+            let maps = document.querySelector('#map')
+
+            const map = new google.maps.Map(maps, {
+                zoom: 11,
+                center: uluru,
+                styles: [
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#212121"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#543c00"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#ba8f17"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#fbbd13"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#d29e0f"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#bdbdbd"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.neighborhood",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#d29e0f"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural.terrain",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#fbc42d"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#181818"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#1b1b1b"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#8a8a8a"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#373737"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#3c3c3c"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#4e4e4e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#feba01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#563f01"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#3d3d3d"
+                            }
+                        ]
+                    }
+                ]
+            });
+
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+        initMap()
+        window.initMap = initMap;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        new Swiper(".swiper", {
+
+            spaceBetween: 30,
+
+            pagination: {
+                clickable: true,
+                el: ".swiper-pagination",
+
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+
+
+            },
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
