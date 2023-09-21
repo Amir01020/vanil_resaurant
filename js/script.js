@@ -95,5 +95,31 @@ btnSubmit.onclick = (event) => {
 
 }
 
+let preloader = document.querySelector('.preloader')
+// document.body.onload=()=>{
+//     // preloader.classList.add('preloaderOf')
+// }
 
+let imges = document.querySelectorAll('img')
+let imges_totle_count = imges.length
+let imges_load_count = 0
+let prevText = document.querySelector('#idLoad')
+let loadBlock = document.querySelector('#loadBlock')
+for(let i = 0; i < imges_totle_count;i++){
+    
+    i.onload = img_load()
+    
 
+}
+
+function img_load() {
+    imges_load_count+=1
+    console.log( (((100 / imges_totle_count)*imges_load_count ) << 0) + '%');
+    prevText.innerHTML = (((100 / imges_totle_count)*imges_load_count ) << 0) + '%'
+    loadBlock.style.width = (((100 / imges_totle_count)*imges_load_count ) << 0) + '%'
+    if (imges_load_count >= imges_totle_count) {
+        setTimeout(() => {
+            preloader.classList.add('preloaderOf')
+        }, 500);
+    }
+}
